@@ -1,38 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+html {
+    font-family: "Reddit Mono", monospace;
+}
+
+li {
+    list-style: none;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding-bottom: 100px;
+}
+
+
+.tarea {
+    background-color: #282c34;
+    color: white;
+    width: 350px;
+    height: 300px;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem;
+
+}
+
+.tarea li {
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+.contador {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+
+.container-counter {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    width: 400px;
+    padding: 10px 10px 40px;
+    border-radius: 30px;
+}
+
+.btn-contador {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    border-radius: 30px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.container-user {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.usuario ul {
+    display: flex;
+}
+.usuario ul li {
+    background-color: #282c34;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+.usuario ul li img {
+    border-radius: 60px;
+    border: white 3px solid;
+    width: 80px;
+    height: auto;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.usuario ul li {
+    margin-right: 20px;
+    transition: transform 1s ease;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.usuario ul li:hover {
+    transform: scale(1.1);
+}
+
